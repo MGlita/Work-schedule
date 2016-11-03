@@ -1,0 +1,36 @@
+D:\Projekt\Nauka C#\Praca domowa(Projekt)\Praca domowa(Projekt)\bin\Debug\Praca domowa(Projekt).exe.config
+D:\Projekt\Nauka C#\Praca domowa(Projekt)\Praca domowa(Projekt)\bin\Debug\Praca domowa(Projekt).exe
+D:\Projekt\Nauka C#\Praca domowa(Projekt)\Praca domowa(Projekt)\bin\Debug\Praca domowa(Projekt).pdb
+D:\Projekt\Nauka C#\Praca domowa(Projekt)\Praca domowa(Projekt)\obj\Debug\Praca domowa(Projekt).csprojResolveAssemblyReference.cache
+D:\Projekt\Nauka C#\Praca domowa(Projekt)\Praca domowa(Projekt)\obj\Debug\Praca_domowa_Projekt_.Form1.resources
+D:\Projekt\Nauka C#\Praca domowa(Projekt)\Praca domowa(Projekt)\obj\Debug\Praca_domowa_Projekt_.Properties.Resources.resources
+D:\Projekt\Nauka C#\Praca domowa(Projekt)\Praca domowa(Projekt)\obj\Debug\Praca domowa(Projekt).csproj.GenerateResource.Cache
+D:\Projekt\Nauka C#\Praca domowa(Projekt)\Praca domowa(Projekt)\obj\Debug\Praca domowa(Projekt).exe
+D:\Projekt\Nauka C#\Praca domowa(Projekt)\Praca domowa(Projekt)\obj\Debug\Praca domowa(Projekt).pdb
+D:\Projekt\Nauka C#\Praca domowa(Projekt)\Praca domowa(Projekt)\obj\Debug\Praca_domowa_Projekt_.Form2.resources
+D:\Projekt\Nauka C#\Praca domowa(Projekt)\Praca domowa(Projekt)\obj\Debug\Praca_domowa_Projekt_.Form3.resources
+D:\Projekt\Nauka C#\Praca domowa(Projekt)\Praca domowa(Projekt)\obj\Debug\Praca_domowa_Projekt_.Form4.resources
+E:\Praca domowa(Projekt)\Praca domowa(Projekt)\bin\Debug\Praca domowa(Projekt).exe.config
+E:\Praca domowa(Projekt)\Praca domowa(Projekt)\obj\Debug\Praca domowa(Projekt).exe
+E:\Praca domowa(Projekt)\Praca domowa(Projekt)\obj\Debug\Praca domowa(Projekt).pdb
+E:\Praca domowa(Projekt)\Praca domowa(Projekt)\bin\Debug\Praca domowa(Projekt).exe
+E:\Praca domowa(Projekt)\Praca domowa(Projekt)\bin\Debug\Praca domowa(Projekt).pdb
+E:\Praca domowa(Projekt)\Praca domowa(Projekt)\obj\Debug\Praca domowa(Projekt).csprojResolveAssemblyReference.cache
+E:\Praca domowa(Projekt)\Praca domowa(Projekt)\obj\Debug\Praca_domowa_Projekt_.Form1.resources
+E:\Praca domowa(Projekt)\Praca domowa(Projekt)\obj\Debug\Praca_domowa_Projekt_.Form2.resources
+E:\Praca domowa(Projekt)\Praca domowa(Projekt)\obj\Debug\Praca_domowa_Projekt_.Form3.resources
+E:\Praca domowa(Projekt)\Praca domowa(Projekt)\obj\Debug\Praca_domowa_Projekt_.Form4.resources
+E:\Praca domowa(Projekt)\Praca domowa(Projekt)\obj\Debug\Praca_domowa_Projekt_.Properties.Resources.resources
+E:\Praca domowa(Projekt)\Praca domowa(Projekt)\obj\Debug\Praca domowa(Projekt).csproj.GenerateResource.Cache
+F:\Praca domowa(Projekt)\Praca domowa(Projekt)\bin\Debug\Praca domowa(Projekt).exe.config
+F:\Praca domowa(Projekt)\Praca domowa(Projekt)\obj\Debug\Praca domowa(Projekt).exe
+F:\Praca domowa(Projekt)\Praca domowa(Projekt)\obj\Debug\Praca domowa(Projekt).pdb
+F:\Praca domowa(Projekt)\Praca domowa(Projekt)\bin\Debug\Praca domowa(Projekt).exe
+F:\Praca domowa(Projekt)\Praca domowa(Projekt)\bin\Debug\Praca domowa(Projekt).pdb
+F:\Praca domowa(Projekt)\Praca domowa(Projekt)\obj\Debug\Praca domowa(Projekt).csprojResolveAssemblyReference.cache
+F:\Praca domowa(Projekt)\Praca domowa(Projekt)\obj\Debug\Praca_domowa_Projekt_.Form1.resources
+F:\Praca domowa(Projekt)\Praca domowa(Projekt)\obj\Debug\Praca_domowa_Projekt_.Form2.resources
+F:\Praca domowa(Projekt)\Praca domowa(Projekt)\obj\Debug\Praca_domowa_Projekt_.Form3.resources
+F:\Praca domowa(Projekt)\Praca domowa(Projekt)\obj\Debug\Praca_domowa_Projekt_.Form4.resources
+F:\Praca domowa(Projekt)\Praca domowa(Projekt)\obj\Debug\Praca_domowa_Projekt_.Properties.Resources.resources
+F:\Praca domowa(Projekt)\Praca domowa(Projekt)\obj\Debug\Praca domowa(Projekt).csproj.GenerateResource.Cache
