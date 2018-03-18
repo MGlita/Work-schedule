@@ -22,8 +22,7 @@ namespace Praca_domowa_Projekt_
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            textBox1.Visible = false;
-            button4.Visible = false;
+            ChangingUrlVisibility(false);
             var path = Path.GetDirectoryName(Application.ExecutablePath);
             bool exist = File.Exists(path + @"\URL.xml");
             if (exist == true)
@@ -33,42 +32,49 @@ namespace Praca_domowa_Projekt_
             }
             else
             {
-                webBrowser1.Visible = false;
-                textBox1.Visible = true;
-                button4.Visible = true;
-                button3.Visible = false;
+                ChangingUrlVisibility(true);
             }
-            string n = "http://planzajec.uek.krakow.pl/index.php?typ=G&id=84731&okres=1";
+            //string url = "http://planzajec.uek.krakow.pl/index.php?typ=G&id=84731&okres=1";
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void AddHomework_Click(object sender, EventArgs e)
         {
             new Form2().ShowDialog();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void MyHomework_Click(object sender, EventArgs e)
         {
             new Form3().ShowDialog();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void ChangeUrl_Click(object sender, EventArgs e)
         {
-            webBrowser1.Visible = false;
-            textBox1.Visible = true;
-            button4.Visible = true;
-            button3.Visible = false;
+            ChangingUrlVisibility(true);
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void PathBtn_Click(object sender, EventArgs e)
         {
-            webName = textBox1.Text;
+            webName = urlName.Text;
             webBrowser1.Navigate(webName);
             s.SerializeObject(webName, "URL.xml");
-            webBrowser1.Visible = true;
-            textBox1.Visible = false;
-            button4.Visible = false;
-            button3.Visible = true;
-
+            ChangingUrlVisibility(false);
+        }
+        private void ChangingUrlVisibility(bool visible)
+        {
+            if (visible == true)
+            {
+                webBrowser1.Visible = false;
+                urlName.Visible = true;
+                pathBtn.Visible = true;
+                changeUrl.Visible = false;
+            }
+            else
+            {
+                webBrowser1.Visible = true;
+                urlName.Visible = false;
+                pathBtn.Visible = false;
+                changeUrl.Visible = true;
+            }
         }
     }
 }

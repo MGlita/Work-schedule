@@ -29,85 +29,89 @@
         private void InitializeComponent()
         {
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
+            this.addHomework = new System.Windows.Forms.Button();
+            this.myHomework = new System.Windows.Forms.Button();
+            this.changeUrl = new System.Windows.Forms.Button();
+            this.urlName = new System.Windows.Forms.TextBox();
+            this.pathBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // webBrowser1
             // 
-            this.webBrowser1.Location = new System.Drawing.Point(48, 12);
-            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Location = new System.Drawing.Point(72, 18);
+            this.webBrowser1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(30, 31);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(778, 250);
+            this.webBrowser1.Size = new System.Drawing.Size(1167, 385);
             this.webBrowser1.TabIndex = 0;
             // 
-            // button1
+            // addHomework
             // 
-            this.button1.Location = new System.Drawing.Point(48, 307);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(166, 69);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Dodaj Prace";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.addHomework.Location = new System.Drawing.Point(72, 472);
+            this.addHomework.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.addHomework.Name = "addHomework";
+            this.addHomework.Size = new System.Drawing.Size(249, 106);
+            this.addHomework.TabIndex = 1;
+            this.addHomework.Text = "Add Homework";
+            this.addHomework.UseVisualStyleBackColor = true;
+            this.addHomework.Click += new System.EventHandler(this.AddHomework_Click);
             // 
-            // button2
+            // myHomework
             // 
-            this.button2.Location = new System.Drawing.Point(628, 307);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(198, 69);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Co mam zadane";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.myHomework.Location = new System.Drawing.Point(942, 472);
+            this.myHomework.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.myHomework.Name = "myHomework";
+            this.myHomework.Size = new System.Drawing.Size(297, 106);
+            this.myHomework.TabIndex = 2;
+            this.myHomework.Text = "What is my homework";
+            this.myHomework.UseVisualStyleBackColor = true;
+            this.myHomework.Click += new System.EventHandler(this.MyHomework_Click);
             // 
-            // button3
+            // changeUrl
             // 
-            this.button3.Location = new System.Drawing.Point(388, 266);
-            this.button3.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(54, 27);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Zmien";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.changeUrl.Location = new System.Drawing.Point(582, 409);
+            this.changeUrl.Margin = new System.Windows.Forms.Padding(2);
+            this.changeUrl.Name = "changeUrl";
+            this.changeUrl.Size = new System.Drawing.Size(81, 42);
+            this.changeUrl.TabIndex = 3;
+            this.changeUrl.Text = "Change";
+            this.changeUrl.UseVisualStyleBackColor = true;
+            this.changeUrl.Click += new System.EventHandler(this.ChangeUrl_Click);
             // 
-            // textBox1
+            // urlName
             // 
-            this.textBox1.BackColor = System.Drawing.Color.Wheat;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(233, 83);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(350, 13);
-            this.textBox1.TabIndex = 4;
+            this.urlName.BackColor = System.Drawing.Color.Wheat;
+            this.urlName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.urlName.Location = new System.Drawing.Point(350, 128);
+            this.urlName.Margin = new System.Windows.Forms.Padding(2);
+            this.urlName.Name = "urlName";
+            this.urlName.Size = new System.Drawing.Size(525, 19);
+            this.urlName.TabIndex = 4;
             // 
-            // button4
+            // pathBtn
             // 
-            this.button4.Location = new System.Drawing.Point(585, 77);
-            this.button4.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(54, 24);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Idz";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.pathBtn.Location = new System.Drawing.Point(878, 118);
+            this.pathBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.pathBtn.Name = "pathBtn";
+            this.pathBtn.Size = new System.Drawing.Size(81, 37);
+            this.pathBtn.TabIndex = 5;
+            this.pathBtn.Text = "Go";
+            this.pathBtn.UseVisualStyleBackColor = true;
+            this.pathBtn.Click += new System.EventHandler(this.PathBtn_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(865, 445);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(1298, 685);
+            this.Controls.Add(this.pathBtn);
+            this.Controls.Add(this.urlName);
+            this.Controls.Add(this.changeUrl);
+            this.Controls.Add(this.myHomework);
+            this.Controls.Add(this.addHomework);
             this.Controls.Add(this.webBrowser1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Form1";
@@ -120,11 +124,11 @@
         #endregion
 
         private System.Windows.Forms.WebBrowser webBrowser1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button addHomework;
+        private System.Windows.Forms.Button myHomework;
+        private System.Windows.Forms.Button changeUrl;
+        private System.Windows.Forms.TextBox urlName;
+        private System.Windows.Forms.Button pathBtn;
     }
 }
 

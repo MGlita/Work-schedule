@@ -21,49 +21,43 @@ namespace Praca_domowa_Projekt_
         {
             InitializeComponent();
             currentWork = 0;
-            var path = Path.GetDirectoryName(Application.ExecutablePath);
-            dir = new DirectoryInfo(Path.GetDirectoryName(Application.ExecutablePath));
-            files.AddRange(dir.GetFiles("Praca_*.xml"));
+            GetHomework();
 
             if (files.Count > 0)
-            {
-                button3.Enabled = true;
-                label1.Visible = false;
-                button1.Visible = true;
-                button2.Visible = true;
+            {               
+                allDoneLbl.Visible = false;
+                ButtonsVisibility(true);
             }
             if (files.Count == 0)
-            {
-                button3.Enabled = false;
-                label1.Visible = true;
-                button1.Visible = false;
-                button2.Visible = false;
+            {                
+                allDoneLbl.Visible = true;
+                ButtonsVisibility(false);
             }
         }
 
         private void Form3_Load(object sender, EventArgs e)
         {
             if(files.Count!=0)
-            deserialize();                      
+            Deserialize();                      
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void NextBtn_Click(object sender, EventArgs e)
         {
             currentWork++;
             if (currentWork >= files.Count)
                 currentWork = 0;
-            deserialize();           
+            Deserialize();           
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void PreviousBtn_Click(object sender, EventArgs e)
         {
             currentWork--;
             if (currentWork < 0)
                 currentWork = files.Count - 1;
-            deserialize();        
+            Deserialize();        
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void DoneBtn_Click(object sender, EventArgs e)
         {
             files[currentWork].Delete();
             files.Remove(files[currentWork]);
@@ -72,23 +66,33 @@ namespace Praca_domowa_Projekt_
                 currentWork = files.Count - 1;
             if (files.Count != 0)
             {
-                deserialize();
+                Deserialize();
             }
             if (files.Count == 0)
             {
-                button3.Enabled = false;
-                button1.Visible = false;
-                button2.Visible = false;
-                label1.Visible = true;
-                textBox1.Text = "";
+                ButtonsVisibility(false);
+                allDoneLbl.Visible = true;
+                hworkDescTxtBox.Text = "";
             }
         }
-        private void deserialize()
+        private void Deserialize()
         {
             string fileName = files[currentWork].Name;
-            var des = s.DeSerializeObject<Praca>(fileName);
-            var data = des.Przedmiot + "\r\n" + des.Opis;
-            this.textBox1.Text = data;
+            var des = s.DeSerializeObject<Homework>(fileName);
+            var data = des.Subject + "\r\n" + des.Desc;
+            this.hworkDescTxtBox.Text = data;
+        }
+        private void ButtonsVisibility(bool enabled)
+        {
+            doneBtn.Enabled = enabled;
+            nextBtn.Visible = enabled;
+            previousBtn.Visible = enabled;
+        }
+        private void GetHomework()
+        {
+            var path = Path.GetDirectoryName(Application.ExecutablePath);
+            dir = new DirectoryInfo(Path.GetDirectoryName(Application.ExecutablePath));
+            files.AddRange(dir.GetFiles("Homework_*.xml"));
         }
     }
 }

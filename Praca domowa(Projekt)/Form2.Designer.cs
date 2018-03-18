@@ -28,93 +28,93 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.subjectListCmBox = new System.Windows.Forms.ComboBox();
+            this.homeworkDescTxtBox = new System.Windows.Forms.TextBox();
+            this.saveBtn = new System.Windows.Forms.Button();
+            this.cancelBtn = new System.Windows.Forms.Button();
+            this.addSubjectBtn = new System.Windows.Forms.Button();
+            this.deleteSubjectBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // subjectListCmBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(120, 124);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(503, 39);
-            this.comboBox1.TabIndex = 0;
+            this.subjectListCmBox.FormattingEnabled = true;
+            this.subjectListCmBox.Location = new System.Drawing.Point(68, 80);
+            this.subjectListCmBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.subjectListCmBox.Name = "subjectListCmBox";
+            this.subjectListCmBox.Size = new System.Drawing.Size(285, 28);
+            this.subjectListCmBox.TabIndex = 0;
             // 
-            // textBox1
+            // homeworkDescTxtBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(32, 188);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(740, 254);
-            this.textBox1.TabIndex = 1;
+            this.homeworkDescTxtBox.Location = new System.Drawing.Point(18, 121);
+            this.homeworkDescTxtBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.homeworkDescTxtBox.Multiline = true;
+            this.homeworkDescTxtBox.Name = "homeworkDescTxtBox";
+            this.homeworkDescTxtBox.Size = new System.Drawing.Size(418, 165);
+            this.homeworkDescTxtBox.TabIndex = 1;
             // 
-            // button1
+            // saveBtn
             // 
-            this.button1.Location = new System.Drawing.Point(93, 491);
-            this.button1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(245, 55);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Zapisz";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.saveBtn.Location = new System.Drawing.Point(52, 317);
+            this.saveBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.saveBtn.Name = "saveBtn";
+            this.saveBtn.Size = new System.Drawing.Size(138, 35);
+            this.saveBtn.TabIndex = 2;
+            this.saveBtn.Text = "Save";
+            this.saveBtn.UseVisualStyleBackColor = true;
+            this.saveBtn.Click += new System.EventHandler(this.SaveBtn_Click);
             // 
-            // button2
+            // cancelBtn
             // 
-            this.button2.Location = new System.Drawing.Point(472, 491);
-            this.button2.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(248, 55);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Anuluj";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.cancelBtn.Location = new System.Drawing.Point(266, 317);
+            this.cancelBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cancelBtn.Name = "cancelBtn";
+            this.cancelBtn.Size = new System.Drawing.Size(140, 35);
+            this.cancelBtn.TabIndex = 3;
+            this.cancelBtn.Text = "Cancel";
+            this.cancelBtn.UseVisualStyleBackColor = true;
+            this.cancelBtn.Click += new System.EventHandler(this.CancelBtn_Click);
             // 
-            // button3
+            // addSubjectBtn
             // 
-            this.button3.Location = new System.Drawing.Point(639, 63);
-            this.button3.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(133, 55);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Dodaj";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.addSubjectBtn.Location = new System.Drawing.Point(359, 41);
+            this.addSubjectBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.addSubjectBtn.Name = "addSubjectBtn";
+            this.addSubjectBtn.Size = new System.Drawing.Size(75, 35);
+            this.addSubjectBtn.TabIndex = 4;
+            this.addSubjectBtn.Text = "Add";
+            this.addSubjectBtn.UseVisualStyleBackColor = true;
+            this.addSubjectBtn.Click += new System.EventHandler(this.AddSubjectBtn_Click);
             // 
-            // button4
+            // deleteSubjectBtn
             // 
-            this.button4.Location = new System.Drawing.Point(639, 124);
-            this.button4.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(133, 55);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Usuń";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.deleteSubjectBtn.Location = new System.Drawing.Point(359, 80);
+            this.deleteSubjectBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.deleteSubjectBtn.Name = "deleteSubjectBtn";
+            this.deleteSubjectBtn.Size = new System.Drawing.Size(75, 35);
+            this.deleteSubjectBtn.TabIndex = 5;
+            this.deleteSubjectBtn.Text = "Delete";
+            this.deleteSubjectBtn.UseVisualStyleBackColor = true;
+            this.deleteSubjectBtn.Click += new System.EventHandler(this.DeleteSubjectBtn_Click);
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(811, 665);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.comboBox1);
+            this.ClientSize = new System.Drawing.Size(456, 429);
+            this.Controls.Add(this.deleteSubjectBtn);
+            this.Controls.Add(this.addSubjectBtn);
+            this.Controls.Add(this.cancelBtn);
+            this.Controls.Add(this.saveBtn);
+            this.Controls.Add(this.homeworkDescTxtBox);
+            this.Controls.Add(this.subjectListCmBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "Add Homework";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -123,11 +123,11 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.ComboBox subjectListCmBox;
+        private System.Windows.Forms.TextBox homeworkDescTxtBox;
+        private System.Windows.Forms.Button saveBtn;
+        private System.Windows.Forms.Button cancelBtn;
+        private System.Windows.Forms.Button addSubjectBtn;
+        private System.Windows.Forms.Button deleteSubjectBtn;
     }
 }

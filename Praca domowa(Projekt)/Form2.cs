@@ -14,71 +14,77 @@ namespace Praca_domowa_Projekt_
 {
     public partial class Form2 : Form
     {
-        public static List<Przedmiot> listaPrzedmiotow = new List<Przedmiot>();
+        public static List<Subject> subjectList = new List<Subject>();
         public Form2()
         {
             InitializeComponent();
-            comboxBinding();
+            ComboxBinding();
         }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Form2.ActiveForm.Close();
-        }
-       
+             
         public void Form2_Load(object sender, EventArgs e)
-        {
-            //comboxBinding();    
-            if (listaPrzedmiotow.Count == 0)
-                button4.Enabled = false;                    
+        {   
+            DeleteEnable(false);
         }
 
-        public void button1_Click(object sender, EventArgs e)
+        public void SaveBtn_Click(object sender, EventArgs e)
         {
-            Praca p = new Praca();
-            p.Przedmiot = this.comboBox1.Text;
-            p.Opis = this.textBox1.Text;
-            
-            string name = p.Przedmiot + p.Opis;
+            Homework p = new Homework
+            {
+                Subject = this.subjectListCmBox.Text,
+                Desc = this.homeworkDescTxtBox.Text
+            };
+
+            string name = p.Subject + p.Desc;
             SerializeClass s = new SerializeClass();
-            s.SerializeObject(p, "Praca_"+ Guid.NewGuid() + ".xml");
+            s.SerializeObject(p, "Homework_"+ Guid.NewGuid() + ".xml");
             Form2.ActiveForm.Close();            
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void CancelBtn_Click(object sender, EventArgs e)
+        {
+            Form2.ActiveForm.Close();
+        }
+
+        private void AddSubjectBtn_Click(object sender, EventArgs e)
         {
             Form2.ActiveForm.Hide();
             new Form4().ShowDialog();
-            comboxBinding();
+            ComboxBinding();
             new Form2().ShowDialog();
-            if (listaPrzedmiotow.Count > 0)
-                button4.Enabled = true;
+            DeleteEnable(true);
         }
 
-        public void comboxBinding()
+        public void ComboxBinding()
         {
             SerializeClass s = new SerializeClass();
-            var nowePrzed = s.DeSerializeObject<List<Przedmiot>>("Lista_P.xml");
-            listaPrzedmiotow = nowePrzed;
-            BindingSource bindingsource1 = new BindingSource();
-            bindingsource1.DataSource = listaPrzedmiotow;
-            
-            comboBox1.DataSource = bindingsource1.DataSource;
-            comboBox1.DisplayMember = "NazwaPrzedmiotu";
-            comboBox1.Refresh();
+            var newSubject = s.DeSerializeObject<List<Subject>>("Subject_Lst.xml");
+            subjectList = newSubject;
+            BindingSource bindingsource1 = new BindingSource
+            {
+                DataSource = subjectList
+            };
+
+            subjectListCmBox.DataSource = bindingsource1.DataSource;
+            subjectListCmBox.DisplayMember = "SubjectName";
+            subjectListCmBox.Refresh();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void DeleteSubjectBtn_Click(object sender, EventArgs e)
         {
-            var currentName = comboBox1.Text;
-            var itemToRemove = listaPrzedmiotow.Single(r => r.NazwaPrzedmiotu == currentName);
-            listaPrzedmiotow.Remove(itemToRemove);
-            var L_P = listaPrzedmiotow;
+            var currentName = subjectListCmBox.Text;
+            var itemToRemove = subjectList.Single(r => r.subjectName == currentName);
+            subjectList.Remove(itemToRemove);
+            var S_L = subjectList;
             SerializeClass s = new SerializeClass();
-            s.SerializeObject(L_P, "Lista_P.xml");
-            comboxBinding();
-            if (listaPrzedmiotow.Count == 0)
-                button4.Enabled = false;
+            s.SerializeObject(S_L, "Subject_Lst.xml");
+            ComboxBinding();
+            DeleteEnable(false);
+        }
+
+        private void DeleteEnable (bool enable)
+        {
+            if (subjectList.Count == 0)
+                deleteSubjectBtn.Enabled = enable;
         }
     }
 }

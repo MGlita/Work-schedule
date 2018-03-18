@@ -17,16 +17,16 @@ namespace Praca_domowa_Projekt_
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void SaveBtn_Click(object sender, EventArgs e)
         {
-            var value = textBox1.Text;
-            Przedmiot p = new Przedmiot();
-            p.NazwaPrzedmiotu = value;
-            Form2.listaPrzedmiotow.Add(p);
+            var value = subjectTxtBox.Text;
+            Subject p = new Subject();
+            p.subjectName = value;
+            Form2.subjectList.Add(p);
 
-            var L_P = Form2.listaPrzedmiotow;
+            var S_L = Form2.subjectList;
             SerializeClass s = new SerializeClass();
-            s.SerializeObject<List<Przedmiot>>(L_P, "Lista_P.xml");
+            s.SerializeObject(S_L, "Subject_Lst.xml");
 
             ActiveForm.Close();   
             

@@ -67,20 +67,20 @@ namespace Praca_domowa_Projekt_
 
             return objectOut;
         }
-        public void SaveValues(Praca v)
+        public void SaveValues(Homework v)
         {
-            XmlSerializer serializer = new XmlSerializer(typeof(Praca));
+            XmlSerializer serializer = new XmlSerializer(typeof(Homework));
             using (TextWriter textWriter = new StreamWriter(@"Text.xml"))
             {
                 serializer.Serialize(textWriter, v);
             }
         }
-        public Praca LoadValues()
+        public Homework LoadValues()
         {
-            XmlSerializer serializer = new XmlSerializer(typeof(Praca));
+            XmlSerializer serializer = new XmlSerializer(typeof(Homework));
             using (TextReader textReader = new StreamReader(@"Text.xml"))
             {
-                return (Praca)serializer.Deserialize(textReader);
+                return (Homework)serializer.Deserialize(textReader);
             }
         }
 
